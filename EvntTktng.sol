@@ -51,6 +51,7 @@ contract EvntTktng {
         emit TktBght(tktId, msg.sender);
     }
 
+
     function vldtTkt(uint256 tktId) public onlyOrg tktEx(tktId) {
         require(!isUsd(tktId), "Ticket has already been used");
 
